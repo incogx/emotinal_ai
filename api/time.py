@@ -9,7 +9,7 @@ app = Flask(__name__)
 CORS(app)
 
 
-@app.route("/", methods=["GET"])
+@app.route("/api/time", methods=["GET"])
 def time_route():
     """Return time and date."""
     return jsonify({"time": get_current_time(), "date": get_current_date()})

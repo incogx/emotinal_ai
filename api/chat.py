@@ -9,7 +9,7 @@ app = Flask(__name__)
 CORS(app)
 
 
-@app.route("/", methods=["POST"])
+@app.route("/api/chat", methods=["POST"])
 def chat():
     """Chat route."""
     data = request.get_json(silent=True) or {}

@@ -9,7 +9,7 @@ app = Flask(__name__)
 CORS(app)
 
 
-@app.route("/", methods=["POST"])
+@app.route("/api/save-name", methods=["POST"])
 def save_name_route():
     """Save the user name."""
     data = request.get_json(silent=True) or {}

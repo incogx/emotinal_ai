@@ -9,7 +9,7 @@ app = Flask(__name__)
 CORS(app)
 
 
-@app.route("/", methods=["GET"])
+@app.route("/api/emotion", methods=["GET"])
 def emotion_route():
     """Return a mock emotion."""
     return jsonify({"emotion": get_mock_emotion()})

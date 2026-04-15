@@ -9,7 +9,7 @@ app = Flask(__name__)
 CORS(app)
 
 
-@app.route("/", methods=["GET"])
+@app.route("/api/get-name", methods=["GET"])
 def get_name_route():
     """Return the saved name."""
     return jsonify({"name": get_saved_name()})
