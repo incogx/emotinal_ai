@@ -1,0 +1,11 @@
+{
+  "name": "nova-jarvis-assistant",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "demo": "powershell -ExecutionPolicy Bypass -File .\\scripts\\start-demo.ps1",
+    "dev": "npm --prefix frontend run dev",
+    "build": "npm --prefix frontend run build",
+    "preview": "npm --prefix frontend run preview"
+  }
+}
